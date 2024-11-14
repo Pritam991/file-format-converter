@@ -3,48 +3,26 @@
 ![Python](https://img.shields.io/badge/Python-3.x-blue.svg)
 
 
-A Python-based file format converter that supports a variety of file types, allowing users to easily convert documents, images, audio, and video files between different formats.
-
-## Table of Contents
-
-- [Features](#features)
-- [Supported Formats](#supported-formats)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Examples](#examples)
-- [Contributing](#contributing)
-- [License](#license)
+A Python-based tool for converting CSV files into JSON format. This converter dynamically loads CSV files, applies schemas for consistent data formatting, and saves them as JSON files. Ideal for processing multiple datasets efficiently, the converter offers a modular design and batch-processing capabilities.
 
 ## Features
 
-- Convert files between popular formats, including:
-  - **Documents**: PDF, DOCX, TXT, CSV
-  - **Images**: PNG, JPEG, BMP, TIFF
-  - **Audio**: MP3, WAV, AAC
-  - **Video**: MP4, AVI, MKV
-- Simple command-line interface (CLI)
-- Batch conversion of multiple files at once
-- Configurable options for quality and resolution (for images and videos)
-- Easy to integrate with other Python projects
+- **Automatic File Detection**: Utilizes glob patterns to automatically detect CSV files for processing.
+- **Schema-Based Conversion**: Reads column schemas from a configuration file to ensure consistency in the output JSON structure.
+- **Dynamic Dataset Identification**: Extracts dataset names from file paths or names using regular expressions.
+- **Flexible CSV to JSON Transformation**: Loads CSV files into Pandas DataFrames with the specified schema, allowing flexible data manipulation.
+- **Target Path Generation**: Automatically generates output file paths for the JSON files.
+- **Batch Processing Wrapper**: Supports converting multiple datasets in a single call, making it efficient for handling large volumes of files.
 
-## Supported Formats
+## Requirements
 
-| File Type | Input Formats         | Output Formats       |
-|-----------|------------------------|----------------------|
-| Document  | PDF, DOCX, TXT, CSV    | PDF, DOCX, TXT, CSV |
-| Image     | PNG, JPEG, BMP, TIFF   | PNG, JPEG, BMP, TIFF |
-| Audio     | MP3, WAV, AAC          | MP3, WAV, AAC       |
-| Video     | MP4, AVI, MKV          | MP4, AVI, MKV       |
+- **Python 3.x**
+- **Pandas** library (`pip install pandas`)
 
-## Installation
+## Getting Started
 
-### Prerequisites
+### Installation
 
-- Python 3.7 or higher
-- [FFmpeg](https://ffmpeg.org/download.html) (for audio and video conversion)
-
-### Clone this repository
-
-```bash
-git clone https://github.com/yourusername/file-format-converter.git
-cd file-format-converter
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/file-format-converter.git
