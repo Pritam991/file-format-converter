@@ -25,4 +25,4 @@ A Python-based tool for converting CSV files into JSON format. This converter dy
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/file-format-converter.git
+   git clone https://github.com/Pritam991/file-format-converter.git
