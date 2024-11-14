@@ -1,7 +1,7 @@
 # File Format Converter
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue.svg)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
+
 
 A Python-based file format converter that supports a variety of file types, allowing users to easily convert documents, images, audio, and video files between different formats.
 
