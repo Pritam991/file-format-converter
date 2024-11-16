@@ -1,8 +1,10 @@
+import sys
 import glob
 import os
 import json
 import re
 import pandas as pd
+
 
 
 def get_column_names(schemas, ds_name, sorting_key='column_position'):
@@ -53,7 +55,8 @@ def process_files(ds_names=None):
         
         
 if __name__ == '__main__':
-    process_files()             
+    ds_names = json.loads(sys.argv[1])
+    process_files(ds_names)             
             
             
         
